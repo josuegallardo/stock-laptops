@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Control Laptops</title>
+    <title>Control Laptops - PANORAMA BPO</title>
     <!-- Favicon
     <link rel="icon" href="favicon.ico" type="image/x-icon">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -75,7 +75,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.php">CONTROL LAPTOPS</a>
+                <a class="navbar-brand" href="index.php">CONTROL LAPTOPS - PANORAMA BPO</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -300,6 +300,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>-->
+                            <li><a href="cambioclave.php"><i class="material-icons">vpn_key</i>Cambiar clave</a></li>
                             <li><a href="cerrar.php"><i class="material-icons">input</i>Cerrar sesión</a></li>
                         </ul>
                     </div>

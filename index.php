@@ -22,9 +22,11 @@ if(isset($_SESSION['usuario'])) {
 	$cantidBaja = $cantidBaja[0][0];
 
 	$cantidPrestamo = $conexion->prepare("SELECT COUNT(id_estado) FROM laptop WHERE id_estado = :codigo");
-	$cantidPrestamo->execute(array(':codigo' => $operativo));
+	$cantidPrestamo->execute(array(':codigo' => $prestamo));
 	$cantidPrestamo = $cantidPrestamo->fetchAll();
 	$cantidPrestamo = $cantidPrestamo[0][0];
+
+
 	require 'menu_nav.php';
 	require 'view/index.view.php';
 	//header('Location: menu_nav.php');

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
  <html>
  <head>
  	<title>QR Equipos</title>
@@ -21,7 +21,7 @@
 	<?php foreach ($codigos as $codigo): ?>
 	<div class="col-sm text-center">
 	<h1><?php echo $codigo['id_laptop']; ?></h1>
- 	<img class="" src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2F//localhost/project_laptops/muestra.php?codigolaptop=<?php echo $codigo['id_laptop']; ?>%2F&choe=UTF-8" title="Enlace a detalle del código" /></div>
+ 	<img class="" src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2F10.9.16.28/muestra.php?codigolaptop=<?php echo $codigo['id_laptop'];?>%2F&choe=UTF-8" title="Enlace a detalle del código" /></div>
 	<?php endforeach; ?>
 </div>
 </div>

@@ -7,6 +7,7 @@
 	}
 	$classLista = "active";
 	$idlaptop = $_GET["codigolaptop"];
+	$idlaptop = substr($idlaptop, 0,5);
     // Preparamos la consulta SQL
 	$laptops = $conexion->prepare("SELECT 
 	LA.id_laptop, MA.nombre_marca,LA.modelo_laptop, SO.nombre_so, MR.cantidad_ram,

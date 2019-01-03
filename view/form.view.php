@@ -242,22 +242,22 @@
 $('#idlaptopSelecto').on('change', function() {
   window.location.href = "editar.php?codigolaptop=" +this.value.trim();
 });
-$("#input-field").keyup(function(e) {
+//$("#input-field").keyup(function(e) {
   // Our regex
   // a-z => allow all lowercase alphabets
   // A-Z => allow all uppercase alphabets
   // 0-9 => allow all numbers
   // @ => allow @ symbol
-  var regex = /^[a-zA-Z]+$/;
+//  var regex = /^[a-zA-Z@]+$/;
   // This is will test the value against the regex
   // Will return True if regex satisfied
-  if (regex.test(this.value) !== true)
+//  if (regex.test(this.value) !== true)
   //alert if not true
   //alert("Invalid Input");
 
   // You can replace the invalid characters by:
-    this.value = this.value.replace(/[^a-zA-Z]+/, '');
-});
+//    this.value = this.value.replace(/[^a-zA-Z@]+/, '');
+//});
     </script>
 </body>
 </html>

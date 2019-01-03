@@ -9,7 +9,7 @@
 body {
 	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
-	background: #1B1D35;
+	background: #ffffff;
 	color:#fff;
 }
 
@@ -21,16 +21,49 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 
 .contenedor {
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 1);
+  color: #f1f1f1;
+  width: 50%;
+  height: 60%;
+  margin-left: 25%;
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.contenedor2 {
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgba(255, 255, 255, 1);
+  color: #f1f1f1;
+  width: 50%;
+  height: 70%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/*
+.contenedor {
+	position: fixed;
 	max-width: 500px;
 	width: 90%;
 	margin: auto;
 }
-
+*/
 .titulo {
 	font-weight: 300;
-	color: #B8711B;
+	color: #B71C1C;
 	text-align: center;
 	margin: 60px 0 30px 0;
 }
@@ -40,14 +73,13 @@ a:hover {
 }
 .border {
 	border:none;
-	margin-bottom: 5px; 
-	border-top:10px solid #B8711B;
+	margin-bottom: 1px; 
+	border-top:5px solid #B71C1C;
 	background: none;
 	color:none;
 }
 
 .formulario {
-	background: #2C2C47;
 	padding: 30px;
 	margin-bottom: 30px;
 }
@@ -64,6 +96,7 @@ a:hover {
 	font-size: 18px;
 	line-height: 18px;
 	border: none;
+	border-bottom: solid #B71C1C 1px;
 	vertical-align: top;
 }
 
@@ -74,9 +107,8 @@ a:hover {
 	max-height: 48px
 	font-size: 18px;
 	line-height: 18px;
-	background: #c8c8c8;
 	display: inline-block;
-	color:#6b6b6b;
+	color:#B71C1C;
 	vertical-align: top;
 }
 
@@ -118,12 +150,12 @@ a:hover {
 	max-height: 48px
 	font-size: 18px;
 	line-height: 18px;
-	background: #679863;
+	background: #B71C1C;
 	display: inline-block;
 	color:#fff;
-	background: #769766;
+	background: #B71C1C;
 	cursor: pointer;
-
+	margin-top: 3px;
 	-webkit-border-radius: 0 3px 3px 0;
 	-moz-border-radius: 0 3px 3px 0;
 	-ms-border-radius: 0 3px 3px 0;

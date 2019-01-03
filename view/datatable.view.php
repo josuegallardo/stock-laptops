@@ -27,7 +27,7 @@
                         <div class="body">
                             <div  class="table-responsive">
                               
-                                <table id="tblData" class="table table-bordered table-striped table-hover dataTable ">
+                                <table id="tblData" class="table table-bordered  dataTable ">
                                     <!--<table id="tblData" class="table table-bordered table-striped table-hover dataTable js-exportable">-->
                                     <thead>
                                         <tr>
@@ -64,7 +64,7 @@
                                     <tbody id="datos">
                                         
                                             <?php foreach ($laptops as $laptop): ?>
-                    <tr>
+                    <tr class="<?php echo $laptop['nombre_estado']; ?>">
                     <td><i name="id_laptop"class="editar fa fa-edit" onclick="enviaid.submit()">&nbsp;<?php echo $laptop['id_laptop']; ?></td>
                     <td><?php echo $laptop['nombre_marca']; ?></td>
                     <td><?php echo $laptop['modelo_laptop']; ?></td>
@@ -74,7 +74,7 @@
                     <td><?php echo $laptop['nombre_procesador']; ?></td>
                     <td><?php echo $laptop['nombre_empresa']; ?></td>
                     <td><?php echo $laptop['nombre_estado']; ?></td>
-                    <td><?php echo $laptop['nombre_usuario']; ?></td>
+                    <td><?php echo $laptop['usuario']; ?></td>
                     <td><?php echo $laptop['obs_laptop']; ?></td>
                     <td><?php echo $laptop['numserie_laptop']; ?></td>
                     </tr>
@@ -91,6 +91,21 @@
             <!-- #END# Exportable Table -->
         </div>
     </section>
+    <style type="text/css">
+        .Operativo{
+            
+            background-color: rgba(136,197,66, 0.5);
+            color: black;
+        }
+        .Prestamo{
+            background-color: rgba(255,214,0, 0.5);
+            color: black;
+        }
+        .Baja{
+            background-color: rgba(213,0,0, 0.5);
+            color: black;
+        }
+    </style>
 <script>
 $(document).ready(function() {
     $('#tblData').DataTable( {
